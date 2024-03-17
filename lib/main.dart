@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'view/main_page.dart';
+import 'view/main_screen.dart';
 import 'view_model/home_provider.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
           ),
           useMaterial3: true,
         ),
-        home: const MainPage(),
+        home: const MainScreen(),
       ),
     );
   }

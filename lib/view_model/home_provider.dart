@@ -4,7 +4,7 @@ import 'package:spotify_app/services/playlist_service.dart';
 import 'package:spotify_app/view/album_search_screen.dart';
 import 'package:spotify_app/view/library_screen.dart';
 
-import '../view/home_page.dart';
+import '../view/featured_playlist_screen.dart';
 
 class HomeProvider extends ChangeNotifier {
   int _selectedIndex = 0;
@@ -17,7 +17,7 @@ class HomeProvider extends ChangeNotifier {
   String redirectUrl = "";
 
   final List<Widget> _pages = <Widget>[
-    const HomePage(), // selectedIndex is 0
+    const FeaturedPlaylistScreen(), // selectedIndex is 0
     const AlbumSearchScreen(), // selectedIndex is 1
     const LibraryScreen(), // selectedIndex is 2
   ];

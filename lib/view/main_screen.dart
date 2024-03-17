@@ -3,11 +3,11 @@ import 'package:provider/provider.dart';
 import 'package:spotify_app/view_model/home_provider.dart';
 
 import 'album_search_screen.dart';
-import 'home_page.dart';
+import 'featured_playlist_screen.dart';
 import 'playlist_detail_screen.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({Key? key}) : super(key: key);
+class MainScreen extends StatelessWidget {
+  const MainScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class MainPage extends StatelessWidget {
             ? provider.pages.elementAt(provider.selectedIndex)
             : Navigator(
                 onGenerateRoute: (settings) {
-                  Widget page = const HomePage();
+                  Widget page = const FeaturedPlaylistScreen();
                   if (settings.name == 'playlistDetail') {
                     page = PlaylistDetailScreen(
                       playlistId: provider.playlistId,

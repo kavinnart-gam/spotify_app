@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:spotify_app/view/widget/playlist_item_widget.dart';
 import 'package:spotify_app/view_model/home_provider.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class FeaturedPlaylistScreen extends StatelessWidget {
+  const FeaturedPlaylistScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
